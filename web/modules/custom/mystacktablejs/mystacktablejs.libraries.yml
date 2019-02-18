@@ -1,0 +1,11 @@
+table_js:
+  version: VERSION
+  css:
+    theme:
+      css/stacktable.css: {}
+  js:
+    js/stacktable.js: {}
+    js/style.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery

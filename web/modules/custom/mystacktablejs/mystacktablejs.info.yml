@@ -1,0 +1,7 @@
+name: My stacktable JS
+description: The Responsive Tables jQuery plugin for stacking tables on small screens.
+type: module
+core: 8.x
+version: 8.x-1.0
+package: My sracktable
+configure: 'TRUE'

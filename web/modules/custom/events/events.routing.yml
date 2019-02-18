@@ -1,0 +1,15 @@
+events.form:
+  path: '/events-form'
+  defaults:
+    _title: 'Events form'
+    _form: '\Drupal\events\Form\EventsForm'
+  requirements:
+    _access: 'TRUE'
+
+events.table.js:
+  path: '/events-js'
+  defaults:
+    _title: 'Events JS'
+    _controller: '\Drupal\events\Controller\EventsController::content'
+  requirements:
+    _access: 'TRUE'

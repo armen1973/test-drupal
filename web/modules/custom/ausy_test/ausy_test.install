@@ -1,0 +1,12 @@
+<?php
+
+    function ausy_test_install() {
+        ausy_test_update_8001();
+    }
+
+
+function ausy_test_uninstall() {
+
+    // Create the styles directory and ensure it's writable.
+    \Drupal::state()->delete('Ausy Test');
+}

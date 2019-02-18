@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.events_entity.field_start_date
+  module:
+    - datetime
+    - events
+id: events_entity.events_entity.field_start_date
+field_name: field_start_date
+entity_type: events_entity
+bundle: events_entity
+label: 'Start date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

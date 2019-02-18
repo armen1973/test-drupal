@@ -1,0 +1,89 @@
+<?php
+
+/**
+ * @file
+ * Contains ausy_test.module.
+ */
+
+use Symfony\Component\Validator\Constraint;
+use Symfony\Component\Validator\ConstraintValidator;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\taxonomy\Entity\Term;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\Entity\NodeType;
+use Drupal\node\NodeTypeInterface;
+use Drupal\Core\Entity\EntityTypeInterface;
+
+
+/**
+ * Implements hook_help().
+ */
+function ausy_test_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ausy_test module.
+    case 'help.page.ausy_test':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module Ausy test') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ausy_test_theme() {
+
+  return [
+    'ausy_test' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+
+function ausy_test_update_8001() {
+    // Nom de machine du vocabulaire de taxonomie.
+    $vocabulaireMachineName = 'Pays';
+    // Nom du vocabulaire de taxonomie en Backoffice.
+    $vocabulairyName = 'Pays';
+
+    // On change la liste des vocabulaires existants.
+    $listeDesVocabulaire = \Drupal\taxonomy\Entity\Vocabulary::loadMultiple();
+
+    // creation du vocabulaire s'il en existe pas.
+    if(!isset($listeDesVocabulaire[$vocabulairyName])) {
+        $vocabulary = \Drupal\taxonomy\Entity\Vocabulary::create(array(
+            'vid' => $vocabulaireMachineName,
+            'machine_name' => 'xxxxxx',
+            'description' => '',
+            'name' => $vocabulairyName,
+        ));
+        $vocabulary->save();
+    }
+
+    // Nom de termes de taxonomie à ajouter.
+    $items = [
+        'France',
+        'Armenie',
+        'Espagne',
+        'Russie',
+        'Portugal',
+    ];
+    foreach ($items as $item) {
+        $term = Term::create(array(
+            'parent' => array(),
+            'name' => $item,
+            'vid' => $vocabulaireMachineName,
+        ))->save();
+    }
+}
+
+/*function ausy_test_entity_base_field_info(\Drupal\Core\Entity\EntityTypeInterface $entity_type) {
+    ksm($entity_type);
+    // Alter the mymodule_text field to use a custom class.
+
+}*/

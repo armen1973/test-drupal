@@ -1,0 +1,7 @@
+name: 'Ausy test'
+type: module
+description: 'Module Ausy test'
+core: 8.x
+version: 8.x-1.0
+package: 'Custom'
+configure: 'TRUE'
