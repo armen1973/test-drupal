@@ -1,0 +1,26 @@
+uuid: fc3b167b-49dd-4458-980a-362065725323
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.test_contenu
+  module:
+    - text
+id: node.test_contenu.body
+field_name: body
+entity_type: node
+bundle: test_contenu
+label: Description
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    summary: ''
+    value: "<p>Test</p>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

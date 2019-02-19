@@ -1,0 +1,26 @@
+uuid: 5055de34-c781-4147-bece-43937da61cdf
+langcode: en
+status: true
+dependencies:
+  module:
+    - events
+    - system
+  theme:
+    - testtheme
+id: events
+theme: testtheme
+region: sidebar_second
+weight: 0
+provider: null
+plugin: events_block
+settings:
+  id: events_block
+  label: Events
+  provider: events
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/events_entity/*'
+    negate: false
+    context_mapping: {  }

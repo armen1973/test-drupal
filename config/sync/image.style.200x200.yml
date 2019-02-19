@@ -1,0 +1,19 @@
+uuid: be72097b-0238-4301-8adb-9622972eaf31
+langcode: en
+status: true
+dependencies: {  }
+name: 200x200
+label: 200x200
+effects:
+  097f2847-1754-45c4-bd16-07437f617daf:
+    uuid: 097f2847-1754-45c4-bd16-07437f617daf
+    id: image_desaturate
+    weight: 1
+    data: {  }
+  7f17229b-d777-4d7d-8477-2eeec16971b3:
+    uuid: 7f17229b-d777-4d7d-8477-2eeec16971b3
+    id: image_resize
+    weight: 2
+    data:
+      width: 200
+      height: 200

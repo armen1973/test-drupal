@@ -1,0 +1,21 @@
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://localhost/test-drupal/web/themes/custom/testtheme/favicon.ico'
+  use_default: true
+schemas:
+  bootstrap: 8000
+  testtheme: 8000
+logo:
+  path: 'public://logo_0.png'
+  url: ''
+  use_default: false
+cdn_jsdelivr_theme: cerulean
+table_responsive: '-1'
+table: ''
+navbar_position: static-top
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true

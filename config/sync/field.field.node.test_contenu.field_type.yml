@@ -1,0 +1,21 @@
+uuid: fa34d1ec-befd-48ad-9cbc-e14ad61e948a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type
+    - node.type.test_contenu
+id: node.test_contenu.field_type
+field_name: field_type
+entity_type: node
+bundle: test_contenu
+label: Type
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: B
+  off_label: A
+field_type: boolean
