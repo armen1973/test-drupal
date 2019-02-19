@@ -16,7 +16,7 @@ article#node_perso h2 {
 }
 
 body.navbar-is-fixed-top {
-    margin-top: 150px;
+    margin-top: 170px;
 }
 
 .mysidebar aside .well {
@@ -25,7 +25,7 @@ body.navbar-is-fixed-top {
     border: transparent;
 }
 
-.menu--main, .menu--account {
+.navbar-nav {
     margin-top: 50px;
     color: #fff;
 }

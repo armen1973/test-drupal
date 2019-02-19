@@ -20,4 +20,4 @@ regions:
   page_bottom: 'Page bottom'
 
 libraries:
-  - 'mystacktablejs/global-styling'
+  - 'testtheme/global-styling'

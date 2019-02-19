@@ -1,0 +1,63 @@
+/**
+ * Place your custom styles here.
+ */
+
+
+/**
+* Custom template nods
+ */
+article#node_perso {
+    background-color: red;
+    padding: 30px;
+}
+
+article#node_perso h2 {
+    color: orange;
+}
+
+body.navbar-is-fixed-top {
+    margin-top: 170px;
+}
+
+.mysidebar aside .well {
+    background-color: transparent;
+    color: rgba(93, 40, 0, 1);
+    border: transparent;
+}
+
+.navbar-nav {
+    margin-top: 50px;
+    color: #fff;
+}
+
+.navbar-toggle .icon-bar {
+    background: #fff;
+}
+
+.navbar-toggle {
+    margin-top: 10px;
+    color: #fff;
+}
+
+.myheader ul li a {
+    background-color: transparent;
+    color: #fff;
+}
+
+.mysidebar aside .well h3 {
+    color: rgba(93, 40, 0, 1);
+    border-bottom: solid 2px rgba(93, 40, 0, 0.3);
+    padding-bottom: 5px;
+}
+.mysidebar section {
+    border-right: double 3px rgba(93, 40, 0, 0.3);
+    padding: 20px;
+}
+
+.mysidebar aside .well section {
+    border: transparent;
+}
+
+.eventcontent {
+    padding-top:40px;
+}
