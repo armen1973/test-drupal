@@ -13,7 +13,7 @@ logo:
 cdn_jsdelivr_theme: cerulean
 table_responsive: '-1'
 table: ''
-navbar_position: static-top
+navbar_position: fixed-top
 features:
   comment_user_picture: true
   comment_user_verification: true
