@@ -18,12 +18,11 @@ class EventsController extends ControllerBase {
         $entityStorage = \Drupal::entityManager()
             ->getStorage('events_entity')
             ->loadMultiple($ids);
-
         $items1 = [];
         foreach($entityStorage as $cle1) {
             $items1[] = $cle1->getName();
         }
-
+        //ksm($items1);
         $database = \Drupal::database();
         $result = $database->select('events_registered', 'er')
             ->fields('er', ['firstName', 'lasteName'])
